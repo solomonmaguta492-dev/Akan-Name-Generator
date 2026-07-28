@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AKAN-NAME-GENERATOR></title>
 </head>
 <body>
+
+    <div class="container">
+        <h1>Akan Name Generator</h1>
+        <p class="description">
+            In Ghana, Akan culture names children according to the day of the week they were born. Enter your details below to discover your traditional Akan name.
+        </p>
+
+        <form id="akanForm">
+            <div class="form-group">
+                <label for="birthdate">Select Birthdate</label>
+                <input type="date" id="birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Select Gender</label>
+                <select id="gender" required>
+                    <option value="" disabled selected>-- Choose your gender --</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <button type="submit">Find My Name</button>
+        </form>
+
+        <!-- Hidden section to display the output -->
+        <div class="result-section" id="resultSection">
+            <h2>Your Akan Name:</h2>
+            <p class="result-text" id="akanNameDisplay">[Name will appear here]</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
     
 </body>
 </html>
