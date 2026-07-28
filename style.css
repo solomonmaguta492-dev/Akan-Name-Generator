@@ -1,5 +1,119 @@
-*{
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  color: #2c3e50;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+header h4 {
+  color: #7f8c8d;
+  font-weight: normal;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Form Styles */
+#Akan\ Form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.Form\ Group,
+.Form-Group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #34495e;
+  font-size: 0.9rem;
+}
+
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+  transition: border-color 0.2s;
+}
+
+input[type="date"]:focus,
+select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+/* Button Styles */
+button[type="submit"] {
+  width: 100%;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #219653;
+}
+
+/* Result Section */
+.result-section {
+  margin-top: 25px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.result-section h3 {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.Name-Display {
+  background: #e8f8f5;
+  color: #16a085;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: 1px dashed #a3e4d7;
+  min-height: 25px;
 }
