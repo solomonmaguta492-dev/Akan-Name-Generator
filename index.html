@@ -1,47 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AKAN-NAME-GENERATOR></title>
-</head>
-<body>
-
-    <div class="container">
-        <h1>Akan Name Generator</h1>
-        <p class="description">
-            In Ghana, Akan culture names children according to the day of the week they were born. Enter your details below to discover your traditional Akan name.
-        </p>
-
-        <form id="akanForm">
-            <div class="form-group">
-                <label for="birthdate">Select Birthdate</label>
-                <input type="date" id="birthdate" required>
-            </div>
-
-            <div class="form-group">
-                <label for="gender">Select Gender</label>
-                <select id="gender" required>
-                    <option value="" disabled selected>-- Choose your gender --</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-            </div>
-
-            <button type="submit">Find My Name</button>
-        </form>
-
-        <!-- Hidden section to display the output -->
-        <div class="result-section" id="resultSection">
-            <h2>Your Akan Name:</h2>
-            <p class="result-text" id="akanNameDisplay">[Name will appear here]</p>
-        </div>
-    </div>
-
-</body>
-</html>
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AKAN-NAME-GENERATOR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Akan Name Generator</h1>
+       <h4> 
+        Discover your Ghanaian name. <br />
+        In Akan culture, children are named after the day <br />
+        of the week they were born. Enter your <br />
+        birthdate and gender to find yours.
+      </h4>
     
-</body>
+    </header>
+    <form id="Akan Form">
+        <div class="Form Group">
+            <label for="Birth Date">Birth Date</label>
+            <input type="date" id="Birth Date" required>
+        </div>
+
+        <div class="Form-Group">
+            <label for="Gender">Gender</label>
+            <select id="Gender" required>
+                <option value="" disabled selected>Select your Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+
+        <button type="submit">Generate Name</button>
+
+     </form>
+     <section class="result-section" id="resultselection">
+        <h3>Your Akan Name Is:</h3>
+        <div class="Name-Display" id="NameDisply"></div>
+     </section>
+     </div>
+  </body>
 </html>
