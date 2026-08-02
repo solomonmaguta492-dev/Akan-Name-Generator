@@ -26,10 +26,10 @@ const femaleNames = [
     "akosua"
 ]
 
-function getAkanName() {
+function getAkanName(form) {
   const birthdate = new Date(document.getElementById("birthdate").value);
   const gender = document.querySelector('input[name="gender"]:checked').value;
-  const dayIndex = birthdate.getDay();
+  const dayIndex = birthdate.getDay() % maleNames.length; // Get the day of the week (0-6) and map it to the array length
 
   const selectedNames = gender === "male" ? maleNames : femaleNames;
   const akanName = selectedNames[dayIndex];
