@@ -1,29 +1,35 @@
-const akanNames = {
-  Male: ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"],
-  Female: ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Amma"]
-};
+const form = document.getElementById('akanForm');
+const displayName = document.getElementById('displayName');
 
-const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+if (form && displayName) {
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
 
-const form = document.getElementById("Akan Form");
-const nameDisplay = document.getElementById("NameDisply");
+        const birthdateInput = document.getElementById('birthdate');
+        const selectedGender = document.querySelector('input[name="gender"]:checked');
 
-form.addEventListener("submit", function(event) {
-  event.preventDefault();
+        if (!birthdateInput || !birthdateInput.value) {
+            displayName.textContent = 'Please select your birthdate.';
+            return;
+        }
 
-  const birthDateInput = document.getElementById("Birth Date").value;
-  const genderInput = document.getElementById("Gender").value;
+        if (!selectedGender) {
+            displayName.textContent = 'Please select your gender.';
+            return;
+        }
 
-  if (!birthDateInput || !genderInput) {
-    nameDisplay.textContent = "Please enter a valid date and select your gender.";
-    return;
-  }
+        const birthDate = new Date(birthdateInput.value);
 
-  const date = new Date(birthDateInput);
-  const dayIndex = date.getDay(); // 0 for Sunday, 1 for Monday, etc.
-  
-  const assignedName = akanNames[genderInput][dayIndex];
-  const dayName = daysOfWeek[dayIndex];
+        if (Number.isNaN(birthDate.getTime())) {
+            displayName.textContent = 'Please enter a valid birthdate.';
+            return;
+        }
 
-  nameDisplay.textContent = `${assignedName} (Born on a ${dayName})`;
-});
+        const dayOfWeek = birthDate.getDay();
+        const maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+        const femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+        const chosenNames = selectedGender.value === 'male' ? maleNames : femaleNames;
+
+        displayName.textContent = `Your Akan name is ${chosenNames[dayOfWeek]}.`;
+    });
+}
