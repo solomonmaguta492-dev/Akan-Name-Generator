@@ -27,6 +27,7 @@ const femaleNames = [
     "ama",
     "akosua"
 ]
+// Get the Akan name based on the birthdate and gender//
 
 function getAkanName(form) {
   const birthdate = new Date(document.getElementById("birthdate").value);
