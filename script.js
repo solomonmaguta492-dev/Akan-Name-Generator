@@ -38,6 +38,24 @@ function getAkanName(form) {
     `Your Akan name is ${akanName}.`;
 }
 
+// Validate input fields//
+
+function validateInput({day, month, year, gender}) {
+  if (isNaN(day) || day < 1 || day > 31) {
+    return "Invalid day. Please enter a day between 1 and 31.";
+  }
+  if (isNaN(month) || month < 1 || month > 12) {
+    return "Invalid month. Please enter a month between 1 and 12.";
+  }
+  if (isNaN(year) || year < 1000 || year > new Date().getFullYear()) {
+    return "Invalid year. Please enter a year between 1000 and the current year.";
+  }
+  if (!gender) {
+    return "Please select a gender.";
+  }
+  return true;
+}
+
 const form = document.getElementById("akanForm");
 if (form) {
   form.addEventListener("submit", function (event) {
