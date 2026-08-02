@@ -59,10 +59,10 @@ function validateInput({day, month, year, gender}) {
 //calculate day of the week using the Akan Name formula//
 function calculateDayOfWeek(day, month, year) {
   // Implementation for calculating day of the week
-  const CC = Math.floor(year / 100); //first two digits of the year
-  const YY = year % 100;//last two digits of the year
-  const MM = month;
-  const DD = day;
+  const CC = Math.floor(year / 100);             //first two digits of the year
+  const YY = year % 100;                        //last two digits of the year
+  const MM = month;                            //month of the year
+  const DD = day;                             //day of the month
 }
 
 const form = document.getElementById("akanForm");
