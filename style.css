@@ -88,20 +88,20 @@ table {
   border: 1px solid var(--border);
   overflow: hidden;
 }
-
+/* Table Header and Cell Styles */
 th,
 td {
   padding: 10px 12px;
   border-bottom: 1px solid #e5e7eb;
   text-align: left;
 }
-
+/* Table Header Styles */
 th {
   background: var(--primary);
   color: white;
   font-weight: 700;
 }
-
+/* Remove border from the last row of the table */
 tr:last-child td {
   border-bottom: none;
 }
