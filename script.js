@@ -24,12 +24,9 @@ if (form && displayName) {
             displayName.textContent = 'Please enter a valid birthdate.';
             return;
         }
-
-        const dayOfWeek = birthDate.getDay();
+        const dayofweek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
         const maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
         const femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
-        const chosenNames = selectedGender.value === 'male' ? maleNames : femaleNames;
-
-        displayName.textContent = `Your Akan name is ${chosenNames[dayOfWeek]}.`;
+       
     });
 }
