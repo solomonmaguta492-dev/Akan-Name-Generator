@@ -45,7 +45,35 @@ header h1 {
 
 header p {
     font-size: 1rem;
-    color: #4b5563;
+    color: #295086;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    line-height: 1.6;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+}
+
+tr:last-child td {
+    border-bottom: none;
 }
 
 main {
@@ -58,7 +86,7 @@ form,
     background: rgba(255, 255, 255, 0.95);
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 20px;
-    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+    box-shadow: 0 12px 30px rgba(11, 45, 122, 0.12);
     padding: 24px;
 }
 
@@ -131,10 +159,12 @@ button:hover {
 }
 
 .about-section {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+    text-align: left;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 0 24px 24px;
+    padding: 20px 24px;
+    align-self: flex-start;
 }
 
 .about-section h2 {
