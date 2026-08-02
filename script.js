@@ -56,6 +56,11 @@ function validateInput({day, month, year, gender}) {
   return true;
 }
 
+//calculate day of the week using the Akan Name formula//
+function calculateDayOfWeek(day, month, year) {
+  // Implementation for calculating day of the week
+}
+
 const form = document.getElementById("akanForm");
 if (form) {
   form.addEventListener("submit", function (event) {
