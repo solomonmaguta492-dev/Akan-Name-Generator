@@ -1,3 +1,4 @@
+// Akan Name Generator Script//
 const dayNames = [
   "Monday",
   "Tuesday",
