@@ -62,7 +62,7 @@ function calculateDayOfWeek(day, month, year) {
   const CC = Math.floor(year / 100); //first two digits of the year
   const YY = year % 100;//last two digits of the year
   const MM = month;
-  
+  const DD = day;
 }
 
 const form = document.getElementById("akanForm");
