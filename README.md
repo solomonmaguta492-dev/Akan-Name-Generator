@@ -38,6 +38,15 @@ The stylesheet in style.css controls the appearance of the website by providing:
 - responsive styling for smaller screens
 - clear styling for tables, buttons, and form inputs
 
+## JavaScript Logic
+
+The script in script.js handles the form submission and generates the Akan name by:
+
+- reading the selected birth date from the form
+- checking the chosen gender (male or female)
+- matching the day of the week to the correct Akan name
+- displaying the result in the page output area
+
 ## Author
 
 Created for learning and cultural exploration of Akan naming traditions.
