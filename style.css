@@ -8,13 +8,13 @@
   --border: #d1d5db;
   --shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
 }
-
+/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+/* Body Styles */ 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #ecfeff 0%, #fef3c7 45%, #fef2f2 100%);
@@ -22,7 +22,7 @@ body {
   min-height: 100vh;
   padding: 24px;
 }
-
+/* Header Styles */
 header {
   text-align: center;
   margin-bottom: 28px;
@@ -38,7 +38,7 @@ header p {
   font-size: 1rem;
   color: #4b5563;
 }
-
+/* Main Content Styles */
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -47,7 +47,7 @@ main {
   margin: 0 auto;
   align-items: center;
 }
-
+/* Section Styles */
 .about-section,
 form,
 #resultSection {
@@ -80,7 +80,7 @@ form,
   color: var(--primary);
   margin-bottom: 10px;
 }
-
+/* Table Styles */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -105,7 +105,7 @@ th {
 tr:last-child td {
   border-bottom: none;
 }
-
+/* Form Styles */
 form {
   display: grid;
   gap: 18px;
@@ -115,12 +115,12 @@ form div {
   display: grid;
   gap: 8px;
 }
-
+/* Input and Button Styles */
 label {
   font-weight: 600;
   color: var(--text);
 }
-
+/* Input Styles */
 input[type="date"] {
   padding: 12px 14px;
   border: 1px solid var(--border);
@@ -128,17 +128,17 @@ input[type="date"] {
   font-size: 1rem;
   outline: none;
 }
-
+/* Focus Styles for Input */
 input[type="date"]:focus {
   border-color: var(--secondary);
   box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
 }
-
+/* Radio Button Styles */
 input[type="radio"] {
   accent-color: var(--primary);
   margin-right: 6px;
 }
-
+/* Button Styles */
 button {
   background: linear-gradient(135deg, var(--primary), #14b8a6);
   color: var(--light);
@@ -150,32 +150,26 @@ button {
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(15, 118, 110, 0.2);
 }
-
+/* Hover Effect for Button */
 button:hover {
   transform: translateY(2px);
   box-shadow: 0 10px 20px rgba(15, 118, 110, 0.25);
 }
-
+/* Result Section Styles */
 #resultSection {
   text-align: center;
   background: linear-gradient(135deg, #fef3c7, #ffffff);
 }
-
+/* Display Name Styles */
 #displayName {
   font-size: 1.2rem;
   font-weight: 700;
   color: #b45309;
 }
-
+/* Footer Styles */
 footer {
   text-align: center;
   margin-top: 24px;
   color: #6b7280;
   font-size: 0.95rem;
-}
-
-@media (max-width: 900px) {
-  main {
-    grid-template-columns: 2fr;
-  }
 }
