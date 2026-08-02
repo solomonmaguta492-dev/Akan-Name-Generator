@@ -28,6 +28,18 @@ A simple web app that generates an Akan name based on a user’s birth date and 
 - CSS
 - JavaScript
 
+## Style Guide
+
+The stylesheet in style.css controls the appearance of the website by providing:
+
+- a colorful and welcoming layout
+- rounded cards and soft shadows
+- a two-column desktop arrangement for the About section and the form/result area
+- responsive styling for smaller screens
+- clear styling for tables, buttons, and form inputs
+
 ## Author
 
 Created for learning and cultural exploration of Akan naming traditions.
+
+
