@@ -98,7 +98,7 @@ td {
 /* Table Header Styles */
 th {
   background: var(--primary);
-  color: white;
+  color: rgb(42, 28, 28);
   font-weight: 700;
 }
 /* Remove border from the last row of the table */
@@ -111,23 +111,23 @@ form {
   gap: 18px;
 }
 
+/* Form Input Styles */
+input[type="date"],
 form div {
   display: grid;
-  gap: 8px;
+  gap: 12px;
 }
-/* Input and Button Styles */
-label {
-  font-weight: 600;
-  color: var(--text);
-}
-/* Input Styles */
+/* Date Input Styles */
 input[type="date"] {
-  padding: 12px 14px;
-  border: 1px solid var(--border);
+  padding: 10px 12px;
+  border: 1px solid #374151;
   border-radius: 10px;
   font-size: 1rem;
   outline: none;
+  background: #1f2937;
+  color: #f5f5f5;
 }
+
 /* Focus Styles for Input */
 input[type="date"]:focus {
   border-color: var(--secondary);
@@ -148,7 +148,7 @@ button {
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 8px 16px rgba(15, 118, 110, 0.2);
+  box-shadow: 0 8px 16px rgba(48, 197, 184, 0.2);
 }
 /* Hover Effect for Button */
 button:hover {
@@ -158,18 +158,18 @@ button:hover {
 /* Result Section Styles */
 #resultSection {
   text-align: center;
-  background: linear-gradient(135deg, #fef3c7, #ffffff);
+  background: linear-gradient(135deg, #fef3c7, #1f3e31);
 }
 /* Display Name Styles */
 #displayName {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #b45309;
+  color: #eb4f07;
 }
 /* Footer Styles */
 footer {
   text-align: center;
   margin-top: 24px;
-  color: #6b7280;
+  color: #2a775c;
   font-size: 0.95rem;
 }
