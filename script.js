@@ -8,6 +8,7 @@ const dayNames = [
   "Saturday",
   "Sunday",
 ];
+// Akan names for males and females based on the day of the week they were born//
 const maleNames = [
   "kwadwo",
   "kwabene",
