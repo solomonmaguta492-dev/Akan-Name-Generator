@@ -1,9 +1,10 @@
+/* Reset some default styles */
 :root {
   --primary: #0f766e;
   --secondary: #f59e0b;
   --accent: #fef3c7;
   --text: #1f2937;
-  --light: #ffffff;
+  --light: #5c311a;
   --border: #d1d5db;
   --shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
 }
@@ -44,7 +45,7 @@ main {
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
-  align-items: start;
+  align-items: center;
 }
 
 .about-section,
@@ -151,7 +152,7 @@ button {
 }
 
 button:hover {
-  transform: translateY(-2px);
+  transform: translateY(2px);
   box-shadow: 0 10px 20px rgba(15, 118, 110, 0.25);
 }
 
@@ -175,6 +176,6 @@ footer {
 
 @media (max-width: 900px) {
   main {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
   }
 }
