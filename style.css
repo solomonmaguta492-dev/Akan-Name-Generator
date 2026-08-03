@@ -1,7 +1,7 @@
 /* Reset some default styles */
 :root {
   --primary: #0f766e;
-  --secondary: #f59e0b;
+  --secondary: bisque;
   --accent: #fef3c7;
   --text: #1f2937;
   --light: #5c311a;
@@ -124,8 +124,20 @@ input[type="date"] {
   border-radius: 10px;
   font-size: 1rem;
   outline: none;
-  background: #1f2937;
-  color: #f5f5f5;
+  background: #bedddf;
+  color: #b64e4e;
+}
+/* Radio Button Container Styles */
+form div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#akanForm {
+  background: #1c97c7;
+  background: linear-gradient(135deg, #cfe3ec, bisque);
+  padding: 20px;
+  border-radius: 20px;
 }
 
 /* Focus Styles for Input */
